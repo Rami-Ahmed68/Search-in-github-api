@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* all colors start  */
+:root {
+    --color1-color:#0B2447;
+    --color2-color:#fff;
+    --color3-color:#092558;
+    --color4-color:#576CBC;
+    --color5-color:rgba(0, 0, 0, 0.5);
+    --color6-color:#0546fc;
+    --color7-color:rgb(180, 180, 180);
+    --color8-color:rgb(151, 151, 151);
+}
+/* all colors end */
+
+/* body start  */
+body {
+    height: 100vh;
+    background-color: var(--color1-color);
+    font-family: 'Teko', sans-serif;
+    transition-duration: 0.5s;
+}
+/* body end  */
+
+/* darack body start  */
+.darck div {
+    background-color: var(--color3-color);
+}
+.darck {
+    background-color: var(--color1-color);
+}
+.darck img{
+    border:  4px solid var(--color2-color);
+}
+.darck .LO-TW div p  a {
+    color:var(--color2-color);
+}
+/* darack body end  */
+
+/* light body start  */
+.light div {
+    background-color: var(--color7-color);
+}
+.light {
+    background-color: var(--color8-color);
+}
+.light img{
+    border:  4px solid black;
+}
+.light .LO-TW div p  a {
+    color: black;
+}
+/* light body end */
+
+/* logo light start  */
+.logo-light {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: var(--color2-color);
+    transition-duration: 0.5s;
+}
+.logo-light .mode i {
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+/* logo light end */
+
+/* .search-cont start  */
+.search-cont {
+    width: 80%;
+    height: 50px;
+    background-color: var(--color3-color);
+    border-radius: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.5s;
+}
+/* .search-cont end */
+
+/* .search-cont input start  */
+.search-cont input{
+    width: 80%;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    padding-left: 10px;
+    margin: 5% 0%;
+    color: var(--color2-color);
+    transition-duration: 0.5s;
+}
+.search-cont input:focus {
+    outline: none;
+}
+    /* .search-cont input end */
+
+    /* .search-cont input icon start  */
+    .search-cont i{
+        color: var(--color4-color);
+    padding: 10px;
+}
+/* .search-cont input icon end */
+
+/* .search-cont input button start  */
+.search-cont button{
+    padding: 10px 20px;
+    background-color: var(--color4-color);
+    border: none;
+    border-radius: 10px;
+    color: var(--color2-color);
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+.search-cont button:hover {
+    background-color: var(--color6-color);
+}
+.search-cont button:focus{
+    outline: none;
+}
+/* .search-cont input button end */
+
+.all-data-cont {
+    width: 80%;
+    height: 70%;
+    margin: 5%  auto;
+    background-color: var(--color3-color);
+    border-radius:15px;
+    display: grid;
+    grid-template-columns: repeat(10 , 1fr);
+    grid-template-areas: "img . data data  data data data data data data"
+    ". . all all  all all all all all all";
+    grid-template-rows: 20% 70%;
+    overflow: hidden;
+    padding: 3%;
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.5s;
+}
+
+/* user img start  */
+.all-data-cont img{
+    grid-area: img;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px black;
+    transition-duration: 0.5s;
+}
+/* user img end */
+
+/* user name joined account start  */
+.name-joined-account {
+    grid-area: data;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    transition-duration: 0.5s;
+}
+.name-joined-account div  {
+    width: 50%;
+    height: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2-color);
+    font-weight: 200;
+    font-size: large;
+    transition-duration: 0.5s;}
+.name-joined-account a {
+    text-decoration: none;
+    color: var(--color4-color);
+}
+.name-joined-account .name {
+    font-size: x-large;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+/* user name joined account end */
+
+/* user all data satrt  */
+.container {
+    grid-area: all;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    margin-top: 5%;
+    transition-duration: 0.5s;
+}
+/* user all data end */
+
+/* lorem start  */
+.container .lorem {
+    width: 90%;
+    height: 20%;
+    margin: auto;
+    padding: 10px;
+    color: var(--color2-color);
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1px;
+    transition-duration: 0.5s;
+}
+/* lorem end */
+
+/* reposer followers following start  */
+.container .repose-followers-following {
+    width: 90%;
+    height: 25%;
+    border-radius: 20px;
+    margin: 5% auto;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.container .repose-followers-following div {
+    width: calc(100% / 3);
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2-color);
+    font-weight: 200;
+    transition-duration: 0.5s;
+}
+/* reposer followers following end */
+
+.container .LO-TW {
+    width: 90%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    transition-duration: 0.5s;
+}
+
+.container .LO-TW div {
+    width: 45%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 0% 1%;
+    color: var(--color2-color);
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 2px;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.container .LO-TW div i{
+    padding: 10px;
+}
+
+.container .LO-TW .twitter p a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.container .LO-TW .twitter p a:hover{
+    font-size: large;
+    color: cornflowerblue;
+}
+
+.container .LO-TW .link p a {
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+.container .LO-TW .link p a:hover{
+    font-size: large;
+    color: cornflowerblue;
+}
+
+/* repos conartiner start */
+.repos-conatiner {
+    width: 80%;
+    height:auto;
+    max-height: 500px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    background-color: var(--color3-color);  
+    overflow-y: scroll;
+}
+.repos-conatiner::-webkit-scrollbar{
+    width: 0px;
+}
+.repos-conatiner .repo {
+    width: 100%;
+    height: 100px;
+    margin: 5px 0px;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.repos-conatiner .repo:hover{
+    margin: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.repo div {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color2-color);
+    font-size: small;
+}
+.repo .name{
+    width: 40%;
+    height: 100%;
+}
+.repo .date{
+    width: 20%;
+    height: 100%;
+}
+.repo .stars{
+    width: 20%;
+    height: 100%;
+}
+.repo .link{
+    width: 20%;
+    height: 100%;
+}
+.repo div a{
+    text-decoration: none;
+    font-size: large;
+    cursor: pointer;
+    color: var(--color4-color);
+    transition-duration: 0.5s;
+}
+.repo div a:hover {
+    font-size: x-large;
+}
+/* repos conartiner end */
+
+@media (max-width:700px) {
+    /* name-joined-account conatiner start  */
+    .name-joined-account {
+        display: flex;
+        flex-direction: column;
+    }
+    /* name-joined-account conatiner end */
+    /* lorem start */
+    .container .lorem {
+        font-size: x-small;
+    }
+    /* lorem end */
+    /* user img start */
+    .all-data-cont img {
+        width: 100px;
+        height: 100px;
+    }
+    /* user img start */
+    .all-data-cont .name-joined-account div{
+        font-size: small;
+    }
+    /* user img end */
+    /* user repose followers following data start */
+    .container .repose-followers-following div {
+        font-size: small;
+    }
+    /* user repose followers following data end */
+    /* user location link twitter data start */
+    .LO-TW div p{
+        font-size: small;
+    }
+    /* user location link twitter data end */
+    /* all data cont new grid system start */
+    .all-data-cont {
+        display: grid;
+        grid-template-columns: repeat(10 , 1fr);
+        grid-template-areas: "img . data data  data data data data data data"
+        "all all all all  all all all all all all";
+    }
+    /* all data cont new grid system end */
+    /* repos conatiner start*/
+    .repos-conatiner .repo  div ,
+    .repo div a{
+        font-size: x-small;
+    }
+    .repos-conatiner .repo div a:hover {
+        font-size: medium;
+    }
+    /* repos conatiner end*/
+}
+
+
+@media (max-width:500px) {
+    .container .LO-TW {
+        display: flex;
+        flex-direction: column;
+    }
+}
